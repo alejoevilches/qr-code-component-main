@@ -3,3 +3,62 @@
     margin:0;
     box-sizing: border-box;
 }
+
+:root{
+    --grayish-blue:hsl(220, 15%, 55%);
+    --white:white;
+    --light-gray: hsl(214, 3%, 57%);
+    --background-color:#D6E2F0;
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url(/Outfit-VariableFont_wght.ttf);
+}
+
+body{
+    background-color:var(--background-color);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+
+.card{
+    width: 300px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:10px;
+    border-radius:10px;
+    font-family: "Outfit";
+    margin-bottom:40px;
+}
+
+.card img{
+    width:280px;
+    border-radius: 10px;
+}
+
+.card h1{
+    font-weight: 700;
+    font-size:1.25em;
+    text-align: center;
+    padding-top:20px;
+}
+
+.card h2{
+    font-weight: 400;
+    font-size:16px;
+    padding-top: 15px;
+    padding-bottom:15px;
+    color:var(--light-gray);
+}
+
+.attribution{
+    font-family:"Outfit";
+
+}
